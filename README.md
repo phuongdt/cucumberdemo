@@ -12,7 +12,7 @@
     Sure that mvn is installed
     Open terminal
     Clone project from github
-        git clone https://github.com/phuongdt/cucumber-demo-test.git
+        git clone https://github.com/phuongdt/cucumberdemo.git
     Run test
         mvn clean install
         or
