@@ -49,6 +49,7 @@ public class shopScenario {
 		if (webdriver_driver==null || webdriver_driver=="") 
 			webdriver_driver = PropertiesUtil.load_config_sys().getProperty("webdriver.driver");
 		if(webdriver_driver.contains("phantomjs")){
+			System.out.println("run with phantomjs");
 			if(webdriver_operator=="windows")
 				file = new File(System.getProperty("user.dir")+File.separator+"phantomjs.exe");		
 			else
@@ -57,6 +58,7 @@ public class shopScenario {
 			driver = new PhantomJSDriver();
 		}
 		if(webdriver_driver.contains("firefox")){
+			System.out.println("run with firefox");
 			driver = new FirefoxDriver();
 		}
 		hpage = new homePage(driver);
